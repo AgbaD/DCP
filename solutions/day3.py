@@ -1,19 +1,22 @@
 #!/usr/bin/python3
 # Author:	@BlankGodd_
 
-import re
 
 class Node:
 	def __init__(self, var, left=None, right=None):
-	self.left = left
-	self.var = var
-	self.right = right
+		self.left = left
+		self.var = var
+		self.right = right
 
-def serialize(a):
-	return "f{a}"
+	@classmethod
+	def from_str(cls, string):
+		a = string.split(',')
+		for i in range(len(a)):
+			if a[i] == "Node":
+				a[i+1] = ''.join(['(', a[i+1]])
+		print(a)
 
-def deserialize(a):
-	# if it gets pattern for 'Node('
-	# deserialize value after ( before ,(if any)
-	# if not, Node.var = value
-	# if ), current Node done
+
+if __name__ == "__main__":
+	node = "Node('root', Node('left', Node('left.left')), Node('right'))"
+	Node.from_str(node)
