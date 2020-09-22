@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author:	@BlankGodd_
+# Author: @AgbaD | @Agba_dr3
 
 def pro(a):
 	c = []
@@ -15,8 +15,9 @@ def pro(a):
 		n = 1
 	return c
 
+
 if __name__ == "__main__":
-	l = input("Enter a space seperated list of integers \n:")
+	l = input("Enter a space separated list of integers \n:")
 	a = l.split(" ")
 	a = [int(i) for i in a]
 	print(pro(a))

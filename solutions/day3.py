@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# Author:	@BlankGodd_
-
+# Author: @AgbaD | @Agba_dr3
 
 class Node:
 	def __init__(self, var, left=None, right=None):

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author: @BlankGodd_
+# Author: @AgbaD | @Agba_dr3
 
 
 # Logical operators

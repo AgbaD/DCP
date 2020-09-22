@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author:	@BlankGodd_
+# Author: @AgbaD | @Agba_dr3
 
 from itertools import combinations
 a = [10, 3, 17, 15]
