@@ -38,10 +38,10 @@ def distinct(s, k):
         i += 1
     length = 0
     ans = ''
-    for i in main:
-        if len(i) > length:
-            ans = i
-            length = len(i)
+    for value in main:
+        if len(value) > length:
+            ans = value
+            length = len(value)
     return ans
 
 
